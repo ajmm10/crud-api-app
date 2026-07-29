@@ -3,7 +3,7 @@ from fastapi import Depends, FastAPI, HTTPException, status
 from app.models import Producto, ProductoCreate, ProductoUpdate
 from app.security import verify_api_key
 
-app = FastAPI(title="Fiestas Mexicanas - Productos API")
+app = FastAPI(title="Fiestas Mexicanas - Productos API v2")
 
 # Storage en memoria
 db: dict[int, Producto] = {}
