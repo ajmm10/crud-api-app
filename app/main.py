@@ -12,7 +12,7 @@ next_id = 1
 
 @app.get("/health")
 def health():
-    return {"status": "ok", "version": "1.2"}
+    return {"status": "ok", "version": "1.3"}
 
 
 @app.get("/productos", response_model=list[Producto], dependencies=[Depends(verify_api_key)])

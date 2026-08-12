@@ -9,7 +9,7 @@ HEADERS = {"X-API-Key": "dev-secret-key"}
 def test_health():
     response = client.get("/health")
     assert response.status_code == 200
-    assert response.json() == {"status": "ok", "version": "1.2"}
+    assert response.json() == {"status": "ok", "version": "1.3"}
 
 
 def test_listar_sin_api_key():
